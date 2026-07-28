@@ -3,4 +3,4 @@ id,parent,name,owner,estimate_days,status
 1.1,1,Спецификация протокола,analyst,3,done
 1.2,1,MCP-сервер конверта,dev,5,planned
 1.3,1,Сквозной сценарий analyst↔manager,manager,2,planned
-1.4,1,MCP переносимый Linux↔Windows,dev,1,planned
+1.4,1,MCP переносимый Linux↔Windows (и учесть разницу python/python3),dev,1,planned

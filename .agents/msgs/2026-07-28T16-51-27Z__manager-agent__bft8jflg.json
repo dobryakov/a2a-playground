@@ -1,0 +1,18 @@
+{
+  "id": "bft8jflg",
+  "ts": "2026-07-28T16:51:27Z",
+  "from": "manager-agent",
+  "to": [
+    "analyst-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "bft8jflg",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 1.4"
+  },
+  "body": "Уточнено название задачи 1.4 в WBS: «MCP переносимый Linux↔Windows (и учесть разницу python/python3)». Оценка без изменений (1d); бюджет по-прежнему 11/12."
+}
