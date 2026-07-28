@@ -38,3 +38,9 @@ export A2A_REPO_ROOT="$(pwd)"
 ```
 
 Инструменты: `post_message`, `read_inbox`, `get_thread`, `pending`, `mark_processed`.
+
+## Cursor IDE
+
+Скопируй `.cursor/mcp.json.example` → `.cursor/mcp.json`, подставь путь к клону и свой `A2A_IDENTITY`
+(`analyst-agent` / `manager-agent`). Файл `mcp.json` в git не коммитится (идентичность локальная).
+Открой **этот клон** как корень workspace, чтобы подхватились project MCP и `AGENTS.md`.

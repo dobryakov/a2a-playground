@@ -1,0 +1,10 @@
+---
+description: Load participant domain role for A2A-over-git
+alwaysApply: true
+---
+
+# Роль
+
+Доменные решения — из `roles/<participant>.md`, где `<participant>` совпадает с локальной
+идентичностью MCP (`A2A_IDENTITY` без суффикса `-agent`/`-human`), напр. `roles/analyst.md`.
+Конверт — только через MCP `a2a-over-git` (см. `AGENTS.md`). Не правь `.agents/msgs/` вручную.

@@ -7,3 +7,6 @@ __pycache__/
 dist/
 build/
 .DS_Store
+
+# Identity lives in env — never commit a real MCP config
+.cursor/mcp.json

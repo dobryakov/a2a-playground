@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "a2a-over-git": {
+      "command": "REPLACE_WITH_CLONE/.venv/bin/python",
+      "args": ["-m", "mcp_a2a"],
+      "cwd": "REPLACE_WITH_CLONE",
+      "env": {
+        "A2A_IDENTITY": "analyst-agent",
+        "A2A_REPO_ROOT": "REPLACE_WITH_CLONE"
+      }
+    }
+  }
+}
