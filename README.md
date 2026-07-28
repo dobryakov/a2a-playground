@@ -10,19 +10,27 @@
 ## Быстрый старт
 
 ```bash
-python3 -m venv .venv
-.venv/bin/pip install -r requirements.txt
+python -m venv .venv
+
+# Linux/macOS
+source .venv/bin/activate
+# Windows (cmd):  .venv\Scripts\activate.bat
+# Windows (PowerShell):  .venv\Scripts\Activate.ps1
+
+python -m pip install -r requirements.txt
 
 # идентичность — только локально, не в git (§3):
-mkdir -p .git/agents
+mkdir -p .git/agents                 # Windows: mkdir .git\agents
 echo analyst-agent > .git/agents/whoami   # или manager-agent
 
-./scripts/run-a2a-mcp.sh
+python -m mcp_a2a
 ```
 
 Инструменты: `post_message`, `read_inbox`, `get_thread`, `pending`, `mark_processed`, `whoami`.
 
 ## Cursor IDE
 
-Открой **этот клон** как корень workspace. Project MCP (`.cursor/mcp.json`) общий для всех;
-кто ты — читается из `.git/agents/whoami`.
+1. Открой **этот клон** как корень workspace.
+2. Выбери интерпретатор проекта: `.venv` (`Python: Select Interpreter`).
+3. Project MCP (`.cursor/mcp.json`) общий: `python -m mcp_a2a`.
+4. Кто ты — из `.git/agents/whoami` (не из mcp.json).

@@ -1,7 +1,8 @@
 {
   "mcpServers": {
     "a2a-over-git": {
-      "command": "./scripts/run-a2a-mcp.sh"
+      "command": "python",
+      "args": ["-m", "mcp_a2a"]
     }
   }
 }
