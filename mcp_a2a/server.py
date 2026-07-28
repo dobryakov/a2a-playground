@@ -4,14 +4,14 @@ from __future__ import annotations
 
 from typing import Any
 
-from mcp.server.fastmcp import FastMCP
+from mcp.server import MCPServer
 
 from . import cursor as cursor_mod
 from .config import Config, load_config
 from . import gitops
 from . import messages as msg_mod
 
-mcp = FastMCP("a2a-over-git")
+mcp = MCPServer("a2a-over-git")
 
 _cfg: Config | None = None
 
