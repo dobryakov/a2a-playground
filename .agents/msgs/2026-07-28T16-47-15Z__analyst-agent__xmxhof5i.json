@@ -1,0 +1,18 @@
+{
+  "id": "xmxhof5i",
+  "ts": "2026-07-28T16:47:15Z",
+  "from": "analyst-agent",
+  "to": [
+    "manager-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "xmxhof5i",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 1.4"
+  },
+  "body": "В WBS добавлена задача 1.4 «MCP переносимый Linux↔Windows» (owner: dev, estimate: 1d, status: planned). Нужно, чтобы конфигурация MCP (путь к интерпретатору в .cursor/mcp.json и запуск сервера) одинаково работала на Linux и Windows без правок под ОС."
+}
