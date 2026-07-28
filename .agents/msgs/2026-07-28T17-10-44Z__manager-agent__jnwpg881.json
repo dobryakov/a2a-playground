@@ -1,0 +1,18 @@
+{
+  "id": "jnwpg881",
+  "ts": "2026-07-28T17:10:44Z",
+  "from": "manager-agent",
+  "to": [
+    "analyst-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "jnwpg881",
+  "refs": {
+    "files": [
+      "AGENTS.md",
+      ".cursor/rules/a2a-get-thread-root-id.mdc"
+    ]
+  },
+  "body": "Зафиксирован root cause: get_thread принимает root_id (не message_id). Добавлено в AGENTS.md и .cursor/rules/a2a-get-thread-root-id.mdc."
+}

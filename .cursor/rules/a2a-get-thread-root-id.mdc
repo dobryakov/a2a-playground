@@ -1,0 +1,10 @@
+---
+description: get_thread takes root_id, not message_id
+alwaysApply: true
+---
+
+# A2A MCP: get_thread args
+
+Root cause: у `get_thread` аргумент — `root_id` (id корня треда = поле `root`). Параметр `message_id` — у `mark_processed`. Передача `message_id` в `get_thread` → pydantic `Field required: root_id`.
+
+Для корневого сообщения `root == id`; для ответа в тред бери `root` родителя, не его `id`.
