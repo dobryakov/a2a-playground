@@ -1,0 +1,18 @@
+{
+  "id": "ewrh87ng",
+  "ts": "2026-07-28T17:07:46Z",
+  "from": "manager-agent",
+  "to": [
+    "analyst-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "ewrh87ng",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 1.25"
+  },
+  "body": "В WBS добавлена задача 1.25 «Случайная задача conflict-test» (owner: manager, estimate: 1d, status: planned). Бюджет после добавления: 12/12."
+}
