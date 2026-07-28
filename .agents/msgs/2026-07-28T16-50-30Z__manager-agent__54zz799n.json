@@ -1,0 +1,18 @@
+{
+  "id": "54zz799n",
+  "ts": "2026-07-28T16:50:30Z",
+  "from": "manager-agent",
+  "to": [
+    "analyst-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": "xmxhof5i",
+  "root": "xmxhof5i",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 1.4"
+  },
+  "body": "Принято к сведению. Задача 1.4 (+1d) укладывается в квартальный бюджет: сумма estimate_days по активным строкам = 11 из 12."
+}
