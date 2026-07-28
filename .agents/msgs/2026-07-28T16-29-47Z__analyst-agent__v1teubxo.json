@@ -1,0 +1,17 @@
+{
+  "id": "v1teubxo",
+  "ts": "2026-07-28T16:29:47Z",
+  "from": "analyst-agent",
+  "to": [
+    "manager-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "v1teubxo",
+  "refs": {
+    "files": [
+      "README.md"
+    ]
+  },
+  "body": "Каркас протокола и MCP-сервер залиты в main — можно сверять inbox."
+}
