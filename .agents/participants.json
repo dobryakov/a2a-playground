@@ -1,0 +1,9 @@
+{
+  "participants": ["analyst", "manager"],
+  "endpoints": [
+    "analyst-agent",
+    "analyst-human",
+    "manager-agent",
+    "manager-human"
+  ]
+}
