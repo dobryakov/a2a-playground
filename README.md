@@ -5,6 +5,7 @@
 - Протокол: [`.agents/PROTOCOL.md`](.agents/PROTOCOL.md)
 - Привязка для агентов: [`AGENTS.md`](AGENTS.md)
 - MCP-сервер (Python stdio): пакет `mcp_a2a/`
+- Cursor MCP: [`.cursor/mcp.json`](.cursor/mcp.json) (в репо, без identity)
 
 ## Быстрый старт
 
@@ -12,35 +13,16 @@
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-# идентичность — только локально (env или .git/agents/whoami)
-export A2A_IDENTITY=analyst-agent
-export A2A_REPO_ROOT="$(pwd)"
+# идентичность — только локально, не в git (§3):
+mkdir -p .git/agents
+echo analyst-agent > .git/agents/whoami   # или manager-agent
 
-.venv/bin/python -m mcp_a2a
+./scripts/run-a2a-mcp.sh
 ```
 
-Пример конфига MCP-клиента (Cursor / Claude Code):
-
-```json
-{
-  "mcpServers": {
-    "a2a-over-git": {
-      "command": "/path/to/clone/.venv/bin/python",
-      "args": ["-m", "mcp_a2a"],
-      "cwd": "/path/to/clone",
-      "env": {
-        "A2A_IDENTITY": "analyst-agent",
-        "A2A_REPO_ROOT": "/path/to/clone"
-      }
-    }
-  }
-}
-```
-
-Инструменты: `post_message`, `read_inbox`, `get_thread`, `pending`, `mark_processed`.
+Инструменты: `post_message`, `read_inbox`, `get_thread`, `pending`, `mark_processed`, `whoami`.
 
 ## Cursor IDE
 
-Скопируй `.cursor/mcp.json.example` → `.cursor/mcp.json`, подставь путь к клону и свой `A2A_IDENTITY`
-(`analyst-agent` / `manager-agent`). Файл `mcp.json` в git не коммитится (идентичность локальная).
-Открой **этот клон** как корень workspace, чтобы подхватились project MCP и `AGENTS.md`.
+Открой **этот клон** как корень workspace. Project MCP (`.cursor/mcp.json`) общий для всех;
+кто ты — читается из `.git/agents/whoami`.

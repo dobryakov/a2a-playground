@@ -66,10 +66,12 @@ def load_config(
     max_depth: int | None = None,
 ) -> Config:
     root = Path(repo_root or os.environ.get("A2A_REPO_ROOT") or os.getcwd()).resolve()
-    ident = identity or os.environ.get("A2A_IDENTITY") or _read_whoami(root)
+    # Identity is local: .git/agents/whoami (spec §3). Env is optional override for tests.
+    ident = identity or _read_whoami(root) or os.environ.get("A2A_IDENTITY")
     if not ident:
         raise RuntimeError(
-            "A2A identity not set. Export A2A_IDENTITY or write .git/agents/whoami"
+            "A2A identity not set. Write it to .git/agents/whoami "
+            "(e.g. echo analyst-agent > .git/agents/whoami)"
         )
     depth = max_depth
     if depth is None:

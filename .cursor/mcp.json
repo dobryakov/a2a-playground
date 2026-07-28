@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "a2a-over-git": {
+      "command": "./scripts/run-a2a-mcp.sh"
+    }
+  }
+}
