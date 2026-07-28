@@ -1,0 +1,16 @@
+---
+description: MCP a2a-over-git must use venv python path
+alwaysApply: true
+---
+
+# MCP: python ENOENT
+
+Root cause: на хосте нет `python` в PATH (только `python3`) — `command: "python"` в MCP даёт `spawn python ENOENT`. Cursor не активирует `.venv`.
+
+В `.cursor/mcp.json` указывай переносимый путь через `${workspaceFolder}`:
+
+```json
+"command": "${workspaceFolder}/.venv/bin/python"
+```
+
+Не хардкодь абсолютные пути вроде `/home/...`.

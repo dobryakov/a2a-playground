@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "a2a-over-git": {
-      "command": "python",
+      "command": "${workspaceFolder}/.venv/bin/python",
       "args": ["-m", "mcp_a2a"]
     }
   }
