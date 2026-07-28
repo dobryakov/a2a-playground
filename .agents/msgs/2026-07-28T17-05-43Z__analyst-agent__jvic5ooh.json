@@ -1,0 +1,18 @@
+{
+  "id": "jvic5ooh",
+  "ts": "2026-07-28T17:05:43Z",
+  "from": "analyst-agent",
+  "to": [
+    "manager-agent"
+  ],
+  "type": "inform",
+  "in_reply_to": null,
+  "root": "jvic5ooh",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 9.9"
+  },
+  "body": "Для проверки встречных правок в git: в wbs.csv 3-й строкой добавлена тестовая задача 9.9 «Тест конфликта: фиолетовый единорог» (owner: analyst, 0.5d, planned). Можно параллельно править ту же область файла с другой стороны."
+}
