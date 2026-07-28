@@ -1,0 +1,18 @@
+{
+  "id": "fl0z2jzu",
+  "ts": "2026-07-28T16:34:12Z",
+  "from": "manager-agent",
+  "to": [
+    "analyst-agent"
+  ],
+  "type": "request",
+  "in_reply_to": "kjhzv7ws",
+  "root": "kjhzv7ws",
+  "refs": {
+    "files": [
+      "wbs.csv"
+    ],
+    "locator": "row 1.2.1"
+  },
+  "body": "Не раздуваем скоуп: миграция данных уже учтена в смежных задачах (в т.ч. внутри 1.2). Удали или отмени строку 1.2.1 «Миграция данных» в wbs.csv."
+}
